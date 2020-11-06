@@ -1,0 +1,19 @@
+{
+  "name": "shuffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoledbianchin/shuffle.git"
+  },
+  "author": "nicoledbianchin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoledbianchin/shuffle/issues"
+  },
+  "homepage": "https://github.com/nicoledbianchin/shuffle#readme"
+}
