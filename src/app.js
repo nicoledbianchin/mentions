@@ -5,7 +5,10 @@ require('dotenv').config();
 const app = express();
 
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-    useNewUrlParser: true
+    useUnifiedTopology: true,
+    useFindAndModify: true,
+    useNewUrlParser: true,
+    useCreateIndex: true
 });
 
 const database = mongoose.connection;
