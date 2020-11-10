@@ -1,5 +1,5 @@
 {
-  "name": "shuffle",
+  "name": "mentions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicoledbianchin/shuffle.git"
+    "url": "git+https://github.com/nicoledbianchin/mentions.git"
   },
   "author": "nicoledbianchin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicoledbianchin/shuffle/issues"
+    "url": "https://github.com/nicoledbianchin/mentions/issues"
   },
-  "homepage": "https://github.com/nicoledbianchin/shuffle#readme",
+  "homepage": "https://github.com/nicoledbianchin/mentions#readme",
   "dependencies": {
     "debug": "^4.2.0",
     "dotenv": "^8.2.0",
