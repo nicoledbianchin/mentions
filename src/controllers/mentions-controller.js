@@ -1,9 +1,8 @@
-const mongoose = require('mongoose');
-const Mentions = mongoose.model('Mentions');
+const repository = require('../repositories/mentions-repository');
 
 exports.listMentions = async (requisition, response) => {
     try {
-        const data = await Mentions.find({}, 'friend mention -_id');
+        const data = await repository.listMentions();
         response.status(200).send(data);
     } catch (error) {
         response.status(500).send({message: 'Falha ao carregar as menções.'});
@@ -12,7 +11,7 @@ exports.listMentions = async (requisition, response) => {
 
 exports.createMention = async (requisition, response) => {
     try {
-        const mention = new Mentions({
+        await repository.createMention({
             friend: requisition.body.friend,
             mention: requisition.body.mention
         });
