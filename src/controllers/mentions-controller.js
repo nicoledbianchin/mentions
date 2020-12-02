@@ -6,11 +6,11 @@ exports.listMentions = async (requisition, response) => {
         const data = await Mentions.find({});
         response.status(200).send(data);
     } catch (error) {
-        response.status(500).send({message: 'Falha ao carregar menções'});
+        response.status(500).send({message: 'Falha ao carregar as menções.'});
     }
 };
 
-exports.createMentions = async (requisition, response) => {
+exports.createMention = async (requisition, response) => {
     try {
         const mention = new Mentions({
             friend: requisition.body.friend,
@@ -21,8 +21,8 @@ exports.createMentions = async (requisition, response) => {
 
         await mention.save();
 
-        response.status(201).send({message: 'Menção cadastrada com sucesso'})
-    } catch (error) {
-        response.status(500).send({message: 'Falha ao cadastrar a menção'})
+        response.status(201).send({message: 'Menção cadastrada com sucesso!'});
+    } catch (e) {
+        response.status(500).send({message: 'Falha ao cadastrar a menção.'});
     }
 };
